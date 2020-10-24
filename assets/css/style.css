@@ -53,6 +53,12 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   border-bottom: 1px solid #f2f2f2 !important;
 }
 
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 figure figcaption {
   margin-top: .5rem;
   font-style: italic;
@@ -1171,7 +1177,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  padding: 5rem 0 2.5rem 0;
+  padding: 3rem 0 2.5rem 0;
 }
 
 .footer h3 {
