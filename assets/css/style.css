@@ -419,7 +419,7 @@ section {
   border: 1px solid #2d71a1;
 }
 
-.php-email-form .validate {
+/* .php-email-form .validate {
   display: none;
   color: red;
   margin: 0 0 15px 0;
@@ -467,7 +467,7 @@ section {
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
-}
+} */
 
 @-webkit-keyframes animate-loading {
   0% {

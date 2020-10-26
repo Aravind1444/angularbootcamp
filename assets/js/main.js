@@ -113,20 +113,20 @@
   };
   siteOwlCarousel();
 
-var $form = $('form#test-form'),
-    url = 'https://script.google.com/macros/s/AKfycbzi3aRa49MejcMSGb9ONJHo68PUqP_Vyzv_83Wk6dHE2Q0svZeQ/exec'
-
-$('#submit-form').on('click', function(e) {
-  e.preventDefault();
-  var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serializeObject()
-  }).success(
-    // do something
-  );
-})
+// var $form = $('form#test-form'),
+//     url = 'https://script.google.com/macros/s/AKfycbzi3aRa49MejcMSGb9ONJHo68PUqP_Vyzv_83Wk6dHE2Q0svZeQ/exec'
+//
+// $('#submit-form').on('click', function(e) {
+//   e.preventDefault();
+//   var jqxhr = $.ajax({
+//     url: url,
+//     method: "GET",
+//     dataType: "json",
+//     data: $form.serializeObject()
+//   }).success(
+//     // do something
+//   );
+// })
   $(window).on('load', function() {
     AOS.init({
       easing: 'ease',
