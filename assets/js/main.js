@@ -113,20 +113,17 @@
   };
   siteOwlCarousel();
 
-// var $form = $('form#test-form'),
-//     url = 'https://script.google.com/macros/s/AKfycbzi3aRa49MejcMSGb9ONJHo68PUqP_Vyzv_83Wk6dHE2Q0svZeQ/exec'
-//
-// $('#submit-form').on('click', function(e) {
-//   e.preventDefault();
-//   var jqxhr = $.ajax({
-//     url: url,
-//     method: "GET",
-//     dataType: "json",
-//     data: $form.serializeObject()
-//   }).success(
-//     // do something
-//   );
-// })
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwfMlO16QHt_C7d2I768yi2Cfs1tpxaAjdEuqHIDdB0-64RSWE/exec'
+  const form = document.forms['google-sheet']
+  form.addEventListener(
+    'submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => alert("Thanks for Contacting us..!"))
+      .catch(error => console.error('Error!', error.message))
+    }
+  )
+  
   $(window).on('load', function() {
     AOS.init({
       easing: 'ease',

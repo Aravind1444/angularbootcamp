@@ -398,19 +398,6 @@
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
-  <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwfMlO16QHt_C7d2I768yi2Cfs1tpxaAjdEuqHIDdB0-64RSWE/exec'
-  const form = document.forms['google-sheet']
-  form.addEventListener(
-    'submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => alert("Thanks for Contacting us..!"))
-      .catch(error => console.error('Error!', error.message))
-    }
-  )
-  </script>
-
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
