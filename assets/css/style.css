@@ -400,8 +400,13 @@ section {
 }
 
 .sponsorsFooter ul li {
-  margin: 35px 16px 0px;
+  margin: 20px 2px 0px;
   display: inline-block;
+}
+
+.sponsorsFooter img {
+  height: 100px;
+  min-width: 100%;
 }
 
 /* Contact Form */
