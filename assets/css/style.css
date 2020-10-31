@@ -402,11 +402,13 @@ section {
 .sponsorsFooter ul li {
   margin: 20px 2px 0px;
   display: inline-block;
+  text-align: center;
 }
 
 .sponsorsFooter img {
   height: 100px;
   min-width: 100%;
+  vertical-align: middle;
 }
 
 /* Contact Form */
